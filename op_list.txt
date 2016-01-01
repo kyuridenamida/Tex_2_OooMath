@@ -1,0 +1,85 @@
+\sqrt 1 sqrt 0
+
+\dfrac 2 over 1
+\frac 2 over 1
+
+\right 0 right 0
+\left 0 left 0
+
+\times 0 times 0
+\div 0 div 0
+\simeq 0 simeq 0
+
+\pm 0 +- 0
+\mp 0 -+ 0
+
+\log 1 log 0
+\cos 1 cos 0
+\sin 1 sin 0
+\tan 1 tan 0
+
+
+\int 0 int 0
+\prod 0 prod 0
+\sum 0 sum 0
+
+
+\alpha 0 α 0
+\beta 0 β 0
+\gamma 0 γ 0
+\delta 0 δ 0
+\epsilon 0 ε 0
+\zeta 0 ζ 0
+\eta 0 η 0
+\theta 0 θ 0
+\iota 0 ι 0
+\kappa 0 κ 0
+\lambda 0 λ 0
+\mu 0 μ 0
+\nu 0 ν 0
+\xi 0 ξ 0
+\omicron 0 ο 0 
+\pi 0 π 0
+\rho 0 ρ 0
+\sigma 0 σ 0
+\tau 0 τ 0
+\upsilon 0 υ 0
+\phi 0 φ 0
+\chi 0 χ 0
+\psi 0 ψ 0
+\omega 0 ω 0
+\ell 0 l 0
+\varphi 0 %iphi 0
+
+\Gamma 0 Γ 0
+\Delta 0 Δ 0
+\Theta 0 Θ 0
+\Lambda 0 Λ 0
+\Xi 0 Ξ 0
+\Pi 0 Π 0
+\Sigma 0 Σ 0
+\Upsilon 0 Υ 0
+\Phi 0 Φ 0
+\Psi 0 Ψ 0
+\Omega 0 Ω 0
+
+\infty 0 ∞ 0
+\partial 0 partial 0
+
+\qquad 0 ~~ 0
+\quad 0 ~ 0
+
+\cdot 0 cdot 0
+\cdots 0 … 0
+\ldots 0 ... 0
+\dot 1 dot 0
+\fallingdotseq 0 ≒ 0
+
+
+^ 1 ^ 0
+_ 1 _ 0
+
+= 0 = 0
+| 0 "|" 0
+& 0 　 0
+\\ 0 　 0

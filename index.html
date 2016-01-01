@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="ja-JP">
+<head>
+<link rel="stylesheet" href="./special_study_css.css" type="text/css">
+<title>T2O(Tex 2 OooMath)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="lib/system.js"></script>
+<script type="text/javascript" src="lib/prototype.js"></script>
+<script type="text/javascript" src="lib/jquery.jslatex.js"></script>
+<script type="text/javascript"><!--
+
+var prevText, prevText2;
+Event.observe(window, "load", function() {
+	prevText = $("text").value;
+	observeTextbox();
+	observeImg();
+});
+function observeTextbox() {
+	setTimeout(observeTextbox, 50);
+	
+	var nowText = "<pre>"+$("text").value + "</pre>";
+	if (nowText != prevText){
+		Do();
+		prevText = nowText;
+	}
+}
+function observeImg() {
+	setTimeout(observeImg, 1000);
+	var nowText = "<pre>"+$("text").value + "</pre>";
+	if (nowText != prevText2){
+		//$("tex-show").innerHTML = "<img src=\"./tex2png.cgi?"+$("text").value+"\">";
+		prevText2 = nowText;
+	}
+}
+function Do() {
+	//$("tex-show").innerHTML = $("text").latex();
+	xhr2("a.cgi", { text: $("text").value }, function(res, data, html) {
+		$("show").innerHTML = res;
+	}, "POST");
+}
+// --></script>
+<style type="text/css"><!--
+--></style>
+</head>
+<body>
+	
+	<!--<textarea id="text" style="width: 400px; height:200px;" ></textarea>-->
+	<!--<p>
+	<div class="latex"> 
+	\int_{0}^{\pi}\frac{x^{4}\left(1-x\right)^{4}}{1+x^{2}}dx =\frac{22}{7}-\pi 
+	</div>-->
+	<div id="specialmain">
+		<div id="speciallogo">
+			<br style="display:none;">
+		</div>
+		<h1>TeX Expression <font color="red">→</font> OpenOffice.org Expression</h1>
+		<div id="content">
+			<p class="heading"><strong>LaTeX Expression</strong>
+			<div class="part">
+				<textarea id="text" style="width: 650px; height:200px;" ></textarea>
+			</div>
+			<br>
+			<p class="heading"><strong>OpenOfficeMath Expression</strong>
+			<div class="part">
+				<div id="show" style="border: 1px solid black; width: 650px; height: 400px; overflow: auto; word-wrap: break-word;"></div>
+			</div>
+			<br>
+			<!--<div id="tex-show" style="border: 1px solid black; width: 800px; height: 400px; overflow: auto; word-wrap: break-word;"></div>-->
+			<div id="copyright">Copyright (C) 2010-2013 KyuR1 All Rights Reserved. </div>
+		</div>
+		
+		
+	</div>
+
+</HTML>
