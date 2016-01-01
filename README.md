@@ -1,13 +1,13 @@
-# TeX Expression to OpenOffice.org Expression
+# README #
+
+### TeX Expression to OpenOffice.org Expression ###
 * 高専3年在学時に，課題で自由に作品を作る課題が与えられたときに，作成したものになります．
 * LaTeX の数式表現を等価な OpenOffice.org の数式表現に変換するプログラムです．
 * 「\frac{\frac{\alpha}{\beta}}{\gamma}」→「{{{{{ α } over { β }}} over { γ }}}」などと変換します．
-
-# README
 * よく出てくるコマンドには対応しているはずですが，対応していない場合は op_list.txt に記述を追加しなければなりません．
 * 次のURLで動作を試すことができます．このデモでは行ごとに変換するようになっています．　http://kyu.pw/demos/T2O/ 
 
-# 工夫した点
+### 工夫した点 ###
 * OpenOffice数式の仕様ドキュメントを見つけることが出来なかったので，手探りでの開発を行いました．
 
 ### 構成/仕様 ###
